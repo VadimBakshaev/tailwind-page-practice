@@ -1,1 +1,22 @@
 @import "tailwindcss";
+
+@font-face {
+    font-family: HelveticaNeue-Medium;
+    font-style: normal;
+    font-weight: 500;
+    src: url("./../static/fonts/HelveticaNeue-Medium.otf")format("otf");
+}
+
+@font-face {
+    font-family: HelveticaNeue-Bold;
+    font-style: normal;
+    font-weight: 700;
+    src: url("./../static/fonts/HelveticaNeue-Bold.otf")format("otf");
+}
+
+
+@theme {
+    --font-medium: "HelveticaNeue-Medium", sans-serif;
+    --font-bold: "HelveticaNeue-Bold", sans-serif;
+    --bg-input: #f7f7f7;
+}
