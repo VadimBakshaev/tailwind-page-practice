@@ -4,14 +4,16 @@
     font-family: HelveticaNeue-Medium;
     font-style: normal;
     font-weight: 500;
-    src: url("./../static/fonts/HelveticaNeue-Medium.otf")format("otf");
+    src: local('HelveticaNeue Medium'), local('HelveticaNeue-Medium'),
+        url("./../static/fonts/HelveticaNeue-Medium.otf")format('opentype');
 }
 
 @font-face {
     font-family: HelveticaNeue-Bold;
     font-style: normal;
     font-weight: 700;
-    src: url("./../static/fonts/HelveticaNeue-Bold.otf")format("otf");
+    src: local('HelveticaNeue Bold'), local('HelveticaNeue-Bold'),
+        url("./../static/fonts/HelveticaNeue-Bold.otf")format('opentype');
 }
 
 
@@ -19,4 +21,11 @@
     --font-medium: "HelveticaNeue-Medium", sans-serif;
     --font-bold: "HelveticaNeue-Bold", sans-serif;
     --bg-input: #f7f7f7;
+    --border-color: #c1c1c1;
 }
+
+/* @layer custom {
+    .unavailable{
+        background-color: ;
+    }
+} */
